@@ -1,13 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-/**
- * React function component for correctly guessing the word
- * @function
- * @returns {JSX.Element} - Rendered element
- */
-
-
-export default (props) => {
+const Congrats = (props) => {
         if(props.success){
             return(
             <div data-test="component-congrats">
@@ -22,3 +16,9 @@ export default (props) => {
             );
         }
 };
+
+Congrats.propTypes = {
+    success: PropTypes.bool.isRequired
+}
+
+export default Congrats;
