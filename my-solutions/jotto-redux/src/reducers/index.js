@@ -3,4 +3,4 @@ import successReducer from "./successReducer";
 
 export default combineReducers({
     successReducer,
-})
+});

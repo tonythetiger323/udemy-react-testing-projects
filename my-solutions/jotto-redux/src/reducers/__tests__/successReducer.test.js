@@ -1,5 +1,5 @@
 import { actionTypes } from "../../actions";
-import { successReducer } from "../successReducer";
+import  successReducer  from "../successReducer";
 
 describe("successReducer", () => {
     it("returns default initial state of `false` when no action is passed", () => {
